@@ -37,13 +37,12 @@ The Data Normalization Module will have standard api request structure for each 
 {
     [
         {
-            "Time":,
-            "Af Correction 1 (%)":,
-            "Af Correction Learning (%)":,
-            "Intake Air Temperature":,
-            "MAF voltage":,
-            "CL/OL status":,
-            "Throttle Position:",
+            "Time (msec)":,
+            "AF Correction #1 (%)":,
+            "AF Correction Learning (%)":,
+            "Intake Air Temperature (C)":,
+            "Mass Airflow Sensor Voltage (V)":,
+            "CL/OL Fueling* (status)":,
         }
     ]
 }
