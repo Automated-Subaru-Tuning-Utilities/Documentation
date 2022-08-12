@@ -2,9 +2,19 @@
 
 ## Introduction
 
+The goal of this project is to automate some of the boring tasks associated with ECU tuning. You provide the log file, and we do the calculations/analysis. This is a modern alternative to the traditional excel spreadsheet that has become the traditional tool for tuners. We are specifically targetting turbocharged Subarus compatible with ECUflash.
+
+This is meant to be a tool suplimental to the tuning process. The goal is not to automate the tuning process, but rather to provide tuners with tools to speed up their workflows.  
+
 ## Functional Requirements
 
+1. Establishing an Air-Fuel Relationship
+
 ## Requirement Modeling
+
+1. Scaling the Bottom of the Maf-Curve
+2. Injector Scaling
+3. Scaling the Top of the Maf-Curve
 
 ## Design
 
@@ -33,7 +43,7 @@ The Data Normalization Module will have standard api request structure for each 
             "Intake Air Temperature":,
             "MAF voltage":,
             "CL/OL status":,
-            "Throttle Position:"
+            "Throttle Position:",
         }
     ]
 }
