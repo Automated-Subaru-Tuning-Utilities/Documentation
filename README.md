@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The goal of this project is to automate some of the boring tasks associated with ECU tuning. You provide the log file, and we do the calculations/analysis. This is a modern alternative to the traditional excel spreadsheet that has become the traditional tool for tuners. We are specifically targetting turbocharged Subarus compatible with ECUflash.
+The goal of this project is to automate some of the boring tasks associated with ECU tuning. You provide the log file, and we do the calculations/analysis. This is a modern alternative to the traditional excel spreadsheet that tuners commonly use. We are specifically targetting turbocharged Subarus compatible with ECUflash.
 
 This is meant to be a tool suplimental to the tuning process. The goal is not to automate the tuning process, but rather to provide tuners with tools to speed up their workflows.  
 
