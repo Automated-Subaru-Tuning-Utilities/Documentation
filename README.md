@@ -60,7 +60,7 @@ The Data Normalization Module will have standard api request structure for each 
   },
   ...
 ]
-
+```
 
 
 #### UI/UX
