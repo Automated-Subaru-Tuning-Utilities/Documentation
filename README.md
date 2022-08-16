@@ -36,21 +36,32 @@ The Data Normalization Module takes user input in the form of csv log files. It 
 ![Data Normalization Module Component Level Diagram](Diagrams/DataNormalizationModule.drawio.png?raw=true "Diagram")
 
 The Data Normalization Module will have standard api request structure for each type of use case
-* LowMaf Scaling
+* LowMaf Scaling Request Structure
 ```json
-{
-    [
-        {
-            "Time (msec)":,
-            "AF Correction #1 (%)":,
-            "AF Correction Learning (%)":,
-            "Intake Air Temperature (C)":,
-            "Mass Airflow Sensor Voltage (V)":,
-            "CL/OL Fueling* (status)":,
-        }
-    ]
-}
+[
+  {
+    "time": int,
+    "af_correction_short": float,
+    "af_correction_learning": float,
+    "intake_air_temperature": int,
+    "mass_airflow_voltage": float,
+    "cl_ol_fueling_status": int,
+  },
+  ...
+]
 ```
+* LowMaf Scaling Response Structure
+```json
+[
+  {
+    "MafVoltage": float,
+    "Correction": float,
+    "Freqency": int
+  },
+  ...
+]
+
+
 
 #### UI/UX
 
