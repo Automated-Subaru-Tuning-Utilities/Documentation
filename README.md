@@ -20,6 +20,10 @@ This is meant to be a tool suplimental to the tuning process. The goal is not to
 
 ### Software Architecture
 
+We will be using a microservice arcitecture to allow for scalability and choice of programming language/technology
+
+![Microservice Architecture](Diagrams/microserviceArcitecture.drawio.png?raw=true "Diagram")
+
 ### Frontend - Component Level Design
 
 #### Data Normaliztion Module
