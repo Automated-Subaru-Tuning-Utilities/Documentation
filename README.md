@@ -120,4 +120,43 @@ ex. if the correction sum is 20%, the correction factor is .1. so multiply the c
 ```
 
 **Topmaf Microservice**
-TODO
+
+Scaling the top of the maf curve requires a wideband o2 sensor and some logs of WOT and top end pulls. 
+We want data from ~2.66v -> top on the maf
+
+* Request Body
+```json
+[
+
+[
+{
+  "load": float,
+  "rpm": int,
+  "target_afr": float
+},
+...
+],
+{
+  "maf_voltage": float,
+  "throttle_position": float,
+  "load": float,
+  "rpm": int,
+  "wideband_o2": float
+},
+...
+
+]
+```
+
+* Response Body
+```json 
+[
+
+{
+  "MafVoltage": float,
+  "Correction": float,
+  "Frequency": int
+},
+...
+
+]
