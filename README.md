@@ -9,19 +9,19 @@ This is meant to be a tool suplimental to the tuning process. The goal is not to
 ## **Requirement Modeling**
 
 1. Scaling the Bottom of the Maf-Curve
-2. Tip in Enrichment Tuning
+2. Tip in Enrichment Tuning 
 3. Scaling the Top of the Maf-Curve
 4. Tuning Boost - Visualizing data
 
 ## **Design**
 
-### **Software Architecture**
+### **System Design**
 
-We will be using a microservice arcitecture to allow for scalability and choice of programming language/technology
+We will be using a microservice arcitecture to allow for scalability and choice of programming language/technology. Sepcifically, we will be using the API gateway design pattern in order to provide a single entry point for our microservices, providing load balancing capabilites and the ability to convert between protocols. The API gateway will also serve our frontend's static build files.  
 
-![Microservice Architecture](Diagrams/microserviceArcitecture.drawio.png?raw=true "Diagram")
+![Microservice Architecture](Diagrams/SystemDesign.png?raw=true "Diagram")
 
-We will be using Docker to containerize our application, and Kubernetes k8s for orchestration.
+We will be using Docker to containerize our application, and we will be looking into Kubernetes k8s for orchestration. 
 
 
 ### **Frontend - Component Level Design**
